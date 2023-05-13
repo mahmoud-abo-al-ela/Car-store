@@ -2,12 +2,15 @@
   top: 0;
   background-color: transparent;
   z-index: 100;
+  width: 100%;
 }
 
 .scrolled {
   background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
+
 
 .scrolled .brand {
   color: #12273D !important;
@@ -90,6 +93,7 @@
 
   .navbar {
     background-color: #fff;
+    width: 70%;
   }
 
   .navbar .brand,
