@@ -33,7 +33,7 @@
 .card {
   padding: 2.4rem;
   background-color: #fff;
-  height: 45rem;
+  height: 60rem;
   display: flex !important;
   flex-direction: column;
   justify-content: space-around;
