@@ -93,7 +93,6 @@
 
   .navbar {
     background-color: #fff;
-    width: 70%;
   }
 
   .navbar .brand,
@@ -112,11 +111,5 @@
   .link.active {
     padding: 1.6rem;
     color: #fff !important;
-  }
-}
-
-@media (max-width: 400px) {
-  .navbar {
-    width: 60%;
   }
 }
