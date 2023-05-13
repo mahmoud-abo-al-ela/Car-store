@@ -50,7 +50,7 @@
 }
 
 .desc {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   text-align: left;
   margin: 2.8rem 0;
 }
@@ -125,7 +125,7 @@
 
 .info p {
   color: #741906;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   margin: 0;
 }
 
@@ -143,20 +143,18 @@
   }
 
   .card h3,
-  .card h5,
-  .card p {
+  .card h5 {
     font-size: 2.2rem;
   }
 
   .btns button {
-    font-size: 3rem;
-    width: 6rem;
-    height: 5rem;
-    padding: 3rem;
+    font-size: 2rem;
+    padding: 2.8rem;
   }
 
   .amount {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
+
 
 }

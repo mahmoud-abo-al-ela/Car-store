@@ -50,8 +50,9 @@
 
 .toggle button {
   height: 6.4rem;
-  width: 5.2rem;
+  width: 6.2rem;
   font-size: 2.8rem;
+  border: none !important;
 }
 
 .navbar a {

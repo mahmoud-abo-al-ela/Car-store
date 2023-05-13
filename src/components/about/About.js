@@ -31,7 +31,7 @@ function About() {
                 with their experience at YourCar
               </p>
             </div>
-            <div className={`${classes.column_2} col-md-5`}>
+            <div className={`${classes.column_2} col-md-5 d-none d-md-block `}>
               <img src={car} alt="car" />
             </div>
           </div>

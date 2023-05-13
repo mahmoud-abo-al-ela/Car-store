@@ -67,17 +67,17 @@ function Cars() {
 
   const settings = {
     dots: true,
-    infinite: false,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    initialSlide: 1,
+    initialSlide: 2,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
+          initialSlide: 2,
           infinite: true,
           dots: true,
         },
@@ -95,8 +95,10 @@ function Cars() {
       {
         breakpoint: 480,
         settings: {
+          infinite: true,
           slidesToShow: 1,
           slidesToScroll: 1,
+          initialSlide: 1,
           centerMode: true,
           centerPadding: "15px",
         },
@@ -113,7 +115,7 @@ function Cars() {
         </div>
       </div>
       <div className={`row ${classes.row_2}`}>
-        <div className="col-md-10 col-12">
+        <div className="col-md-10 col-12 p-0">
           <Slider className="slider" {...settings}>
             {carData.map((car) => {
               return (

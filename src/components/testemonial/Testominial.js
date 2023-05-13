@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import img from "../../imgs/testmonials/bmw.png";
+import "./custom-slider-style.css";
 
 function Testominial() {
   const settings = {
@@ -52,8 +53,8 @@ function Testominial() {
           <h3>Testimonials</h3>
         </div>
         <div className={`row d-flex justify-content-center ${classes.row_2}`}>
-          <div className="col-md-10 col-10">
-            <Slider className="mb-5" {...settings}>
+          <div className="col-md-10 col-12 p-0">
+            <Slider className="mb-5 slider" {...settings}>
               {testimonials.map((person, index) => {
                 return (
                   <>

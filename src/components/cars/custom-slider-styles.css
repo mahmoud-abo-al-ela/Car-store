@@ -26,6 +26,10 @@
 }
 
 
+.slider .slick-dots li {
+  width: 30px;
+}
+
 .slider .slick-dots li.slick-active button:before {
   color: #741906 !important;
   opacity: 1 !important;
@@ -43,4 +47,6 @@
   .slider .slick-prev {
     display: none !important;
   }
+
+  .slider .slick-dots {}
 }

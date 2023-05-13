@@ -36,7 +36,6 @@
 
 .info p:first-of-type {
   color: #741906;
-
   font-weight: bold;
   font-size: 2.2rem;
 
@@ -135,12 +134,35 @@
 
 @media (max-width: 767px) {
   .cartDropdown {
-    top: 12rem;
-    width: 40%;
+    top: 10rem;
+    width: 100%;
   }
 
   .delete {
     font-size: 2.4rem;
-    width: 75%;
+    width: 50%;
+  }
+
+  .cartItem {
+    height: 40%;
+  }
+
+  .info p:first-of-type {
+    font-size: 2.6rem;
+  }
+
+  .info p:last-of-type {
+    font-size: 2rem;
+  }
+
+  .edit button {
+    height: 3.3rem;
+    font-size: 1.6rem;
+    width: 3rem;
+  }
+
+  .amount {
+    font-size: 2rem;
+    padding: 0 1rem;
   }
 }

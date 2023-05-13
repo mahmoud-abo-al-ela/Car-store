@@ -44,3 +44,13 @@
   width: 86%;
   margin: 2.4rem auto;
 }
+
+@media (max-width: 768px) {
+  .services {
+    margin-bottom: 0rem;
+  }
+
+  .services p {
+    margin-bottom: 6rem;
+  }
+}
