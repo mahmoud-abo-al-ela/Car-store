@@ -1,5 +1,5 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import classes from "./Navbar.module.css";
 import Cart from "../Cart";
 
@@ -7,14 +7,39 @@ function Navs() {
   const [isBackdrop, setIsBackdrop] = useState(true);
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
+  const sectionsRef = useRef([]);
 
   useEffect(() => {
+    sectionsRef.current = [
+      document.querySelector("#home"),
+      document.querySelector("#about"),
+      document.querySelector("#services"),
+      document.querySelector("#cars"),
+      document.querySelector("#contact-us"),
+    ];
     const handleScroll = () => {
-      if (window.pageYOffset > 0) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      const currentPosition = window.pageYOffset;
+
+      sectionsRef.current.forEach((section, index) => {
+        if (
+          section.offsetTop - 100 <= currentPosition &&
+          section.offsetTop + section.offsetHeight - 100 > currentPosition
+        ) {
+          setActiveLink(section.id);
+        }
+
+        const isBottom =
+          window.innerHeight + window.scrollY >=
+          document.body.offsetHeight - 50;
+        if (isBottom) {
+          setActiveLink("contact-us");
+        }
+        if (window.pageYOffset > 0) {
+          setScrolled(true);
+        } else {
+          setScrolled(false);
+        }
+      });
     };
 
     window.addEventListener("scroll", handleScroll);
